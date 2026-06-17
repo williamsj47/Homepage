@@ -1,0 +1,43 @@
+
+.block {
+    background-color: rgb(177, 241, 217);
+    margin:10px;
+padding:10px;
+
+}
+
+.inline {
+background-color:lemonchiffon;
+/* width,height,padding,margin have no effect on inline elements by default  */
+
+}
+
+.inline-block {
+background-color: rgb(229, 161, 229);
+display:inline-block;
+width:150px;
+height:150px;
+margin:50px;
+padding:20px;
+/* inline block is a hybrid display form that allows our elements to nest along side one another, while also being able to modify width, height, margin, padding */
+
+}
+
+.content-box {
+    background-color: rgb(255, 236, 125);
+    width: 200px;
+    height: 200px;
+    padding:50px;
+    border: 10px dotted rgb(3, 23, 114);
+    margin:50px 20px 30px 40px;
+
+}
+
+.border-box {
+    background-color: rgb(237, 244, 144);
+    width: 200px;
+    height: 200px;
+    padding:50px;
+    border: 10px dotted rgb(146, 157, 205);
+    margin:50px 20px 30px 40px;
+}
