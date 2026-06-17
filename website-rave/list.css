@@ -1,0 +1,25 @@
+
+
+body {
+    background-color:black;
+}
+
+h1 {
+    color:aquamarine;
+    font-size: 55px;
+    border: dotted 15px rgb(102, 255, 0);
+}
+
+/* h2 { */
+    color:fuchsia;
+
+ul {
+    color:rgb(92, 213, 12);
+    list-style-type:none;
+    padding-left: 05px;
+   
+}
+
+h2 {
+    color: blueviolet;
+}

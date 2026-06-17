@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'ouvrieres soldates';
+    src: url('ouvrieres-soldates.woff2') format('woff2'),
+        url('ouvrieres-soldates.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color:rgb(255, 0, 115);
+    font-family:normal;
+}
+/* how to make a background image ex. background-image:url("rave-photo.jpg") background-size:200px;
+background-repeat:no-repeat; 
+impact=fantasy */
+
+p {
+    color:rgb(255, 231, 93);
+    background-color:rgb(255, 0, 115);
+    font-size:15px;
+    border:dotted rgb(0, 0, 0) 100px;
+
+    /* padding is for internal spacing */
+
+    padding:10px;
+
+    /*  margin is for external spacing of elements */
+
+    margin:80px;
+
+    font-weight:normal;
+    line-height:30px;
+    letter-spacing:.5px;
+    font-style:none;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+p:hover {
+    background-color:rgb(115, 0, 255)
+}
+
+h1 {
+    color: rgb(255, 231, 93);
+    font-family: "Instrument Serif", serif;
+    font-weight:lighter;
+    font-style:italic
+
+}
+
+h2 { 
+    font-family: 'ouvrieres soldates';
+}
+
+.winter {
+    background-color:rgb(255, 117, 193);
+    font-size:40px;
+    text-align:center;
+}
+
+a {
+    color:aqua;
+    font-size:20px;
+    text-decoration:none;
+}
+
+a:hover {
+    background-color:aqua;
+    color:blue;
+    font-size:25px;
+}

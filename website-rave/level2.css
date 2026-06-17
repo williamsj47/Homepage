@@ -1,0 +1,18 @@
+
+body {
+    background-image: url(backroom-four.png);
+
+}
+
+h1 {
+    color: aliceblue;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20%;
+}
+
+a {
+    color: rgb(108, 218, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}

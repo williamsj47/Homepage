@@ -1,0 +1,21 @@
+
+/* Style sheet for ;evel one backrooms */
+
+body {
+    background-image: url(backrooms-3.jpg);
+    background-size:cover;
+}
+
+h1 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color:beige;
+}

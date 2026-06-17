@@ -1,0 +1,16 @@
+
+body {
+    background-image: url(backrooms-one.webp);
+    background-size:cover;
+   
+}
+h1 {
+    color:rgb(66, 65, 60);
+    font-style: italic;
+    margin: 20px;
+    padding: 30px;
+    border-color: rgb(0, 0, 0);
+    border-width: 05px;
+    border-style:hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

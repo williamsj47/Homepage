@@ -1,0 +1,12 @@
+
+
+body {
+    background-image: url(backroom-five.webp);
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(255, 238, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+}
