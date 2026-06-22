@@ -1,28 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
 
 body {
-    background-color:rgb(255, 243, 212);
+    margin-bottom: 200px;
 }
 
-h1 {
-    color:rgb(111, 80, 214);
-    font-size:40px;
+
+.box {
+    background-color: orchid;
+    color: orangered;
+    width:100px;
+    height:100px;
+    margin:0px 0;
 }
 
-ul {
-    color: rgb(255, 0, 0);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:20px;
-    font-style: italic;
+.relative {
+    background-color: aquamarine;
+    position:relative;
+    /* relatively  positioned elements position themsevles relative to their original location */
+    top: 50px;
+    left:50px;
+    z-index:1;
 }
 
-.list {
-    color:rgb(255, 0, 76);
-    background-color:rgb(111, 80, 214);
-    padding:10px;
+.fixed {
+    background-color: cornflowerblue;
+    position:fixed;
+    /* fixed elements position themselves relative to the viewport (or browser window) */
+    bottom:0;
+    right:0px;
+    margin: 0;
 }
 
-p {
-    font-family:monospace
+.sticky {
+    background-color: lightgreen;
+    position: sticky;
+    /* sticky position needs a top,bottom,left, or right property in order to function*/
+    top: 0px;
+    z-index: 2;
+    /* the z index generally will only work on elements that have been a position value other than static */
+}
+
+.container {
+background-color: deeppink;
+width: 400px;
+height: 400px;
+position:relative
+}
+
+
+.absolute {
+    background-color: khaki;
+    position:absolute;
+    top:0px;
+    right: -100px;
+    margin:0;
 }
 
 .smiley {
