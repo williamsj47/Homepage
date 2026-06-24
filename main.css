@@ -1,24 +1,40 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirNext-Medium.woff2') format('woff2'),
+        url('AvenirNext-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 body {
-    background-color:rgb(255, 71, 178);
+    background-color:rgb(195, 0, 114);
 }
 
 h1 {
-    color:rgb(111, 80, 214);
+    color:rgb(186, 164, 255);
     font-size:40px;
+    
 }
 
 ul {
-    color: rgb(0, 0, 0);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(186, 164, 255);
+    font-family: 'Avenir';
     font-size:20px;
     font-style: italic;
 }
 
 .list {
-    color:rgb(0, 0, 0);
-    background-color:rgb(154, 31, 255);
+    color:rgb(186, 164, 255);
+    /* background-color:rgb(154, 31, 255); */
     padding:10px;
+    text-decoration: none;
+}
+
+.link-hover:hover {
+    background-color: rgb(140, 255, 0);
+    color: rgb(255, 0, 76);
 }
 
 p {

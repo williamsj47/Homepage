@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.box {
+    background-color: darkorange;
+    width: 200px;
+    height:200px;
+    position:relative;
+
+    /* animation-name:test;
+    animation-duration:10s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear; */
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: both; */
+
+    animation: test 4s 2s infinite linear alternate both;
+}
+
+@keyframes test {
+    0% {
+        background-color: rgb(255, 183, 0);
+        left: 0;
+    }
+    100% {
+        background-color: crimson;
+        left:200px;
+    }
+}
+
+.container {
+    background-color: rgb(205, 239, 228);
+    height:100vh;
+    /* vh stands for viewport height */
+
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* gap: 120px; */
+    position: relative;
+    overflow: hidden;
+    /* hidden overflow prevents an additional horizontal scroll */
+}
+
+.circle {
+    background-color: indianred;
+    width: 100px;
+    height:100px;
+    border-radius: 100px;
+    animation: pulse 2s infinite alternate;
+
+}
+
+
+/* name keyframe whatever u want */
+@keyframes pulse  {
+    0% {
+        background-color: indianred;
+        scale:50%;
+    }
+    
+    
+    100% {
+        background-color: darksalmon;
+        scale:100%;
+    }
+}
+
+.square {
+    background-color: indianred;
+    width: 100px;
+    height:100px;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.mover {
+background-color: indianred;
+width: 150px;
+height: 40px;
+border-radius: 50px;
+position: absolute;
+bottom: 0;
+left: 0;
+animation: move 4s infinite ease-in-out;
+}
+
+@keyframes move {
+    0% {
+    left:0;
+    }
+    25% {
+        rotate:365deg;
+    }
+    50% {
+    left:100vw;
+    }
+    100% {
+        left:0;
+    }
+}
