@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+background-color: honeydew;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.responsive {
+    background-color: aquamarine;
+    max-width: 800px;
+    margin:0 auto;
+    padding: 10px;
+}
+
+/* max-width = desktop-first, media queries get progressivley smaller as we move down the css */
+/* min-width = mobile-first, media queries get progressively larger as we move down the css */
+
+@media screen and (max-width:900px) {
+
+    body {
+        background-color: rgb(226, 208, 254);
+    }
+
+
+.responsive {
+    background-color: rgb(175, 216, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+}
+
+/* Desktop---> tablet--->phone (with max width) */
+
+
+@media screen and (max-width:600px) {
+body {
+    background-color: tomato;
+}
+
+.responsive {
+background-color: rgb(239, 201, 201);
+}
+
+}

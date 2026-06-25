@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'pumpkin';
+    src: url('BODYNOTE.woff2') format('woff2'),
+        url('BODYNOTE.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: rgb(218, 91, 0);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+header, nav, .content, aside, footer {
+border:5px solid orange;
+border-style:dotted;
+padding: 20px;
+}
+
+p, ul {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header {
+    font-size: 60px;
+    font-style: italic;
+}
+
+main {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+nav, aside {
+    width:25%;
+}
+
+.content {
+    width:50%;
+}
+
+/* tablet styles */
+@media screen and (max-width:1000px) {
+    body {
+        background-color: purple;
+    }
+    header, nav, .content, aside, footer {
+    border:5px dotted rgb(255, 98, 0);
+    }
+
+    main {
+    flex-wrap: wrap;
+    }
+
+    nav {
+    width:100%;
+    }
+
+   .content, aside {
+        width: calc(50% - 5px);
+    }
+
+}
+
+
+
+
+@media screen and (max-width:900px) {
+    body {
+        background-color: rgb(50, 176, 4);
+    }
+
+    header, nav, .content, aside, footer {
+border:5px dotted rgb(219, 10, 238);
+    }
+    
+}
+
