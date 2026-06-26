@@ -17,11 +17,23 @@ img {
 
 body {
     background-color: rgb(218, 91, 0);
+    transition: all 1s;
 }
 
 .container {
     max-width: 1100px;
     margin: 20px auto;
+}
+
+header {
+    background-color: rgb(243, 138, 0);
+    transition: background-color .5s;
+
+}
+
+header:hover {
+    background-color: rgb(100, 74, 57);
+    
 }
 
 header, nav, .content, aside, footer {
@@ -82,15 +94,23 @@ nav, aside {
 
 
 
-
-@media screen and (max-width:900px) {
+/* phone styles */
+@media screen and (max-width:600px) {
     body {
         background-color: rgb(50, 176, 4);
+        font-size:110% ;
+    
     }
 
     header, nav, .content, aside, footer {
 border:5px dotted rgb(219, 10, 238);
-    }
-    
 }
+
+.content, aside {
+width:100%;
+}
+
+}
+
+
 
