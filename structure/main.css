@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'hortus';
+    src: url('Hortus-Regular.woff2') format('woff2'),
+        url('Hortus-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'brisbane';
+    src: url('BrisbaneParkDemoRegular.woff2') format('woff2'),
+        url('BrisbaneParkDemoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: green;
+    background-image: url(grass-pattern.jpeg);
+    background-size: cover;
+
+}
+
+.grass {
+    display: flex;
+justify-content: space-between;
+}
+
+
+.flower-1 {
+    width: 200px;
+
+}
+
+.flower-1:hover {
+    animation: spin 4s;
+
+}
+
+
+.ladybug {
+    width: 200px;
+    display: flex;
+    flex-direction: row;   
+    position: absolute; 
+    bottom: 0;
+    left: 0px; 
+}
+
+.fence {
+width: 200px;
+    display: flex;
+    flex-direction: row; 
+    position: absolute; 
+    bottom: 0;
+    right: 550px;
+}
+
+.shovel {
+width: 200px;
+    display: flex;
+    flex-direction: row;  
+    position: absolute; 
+    bottom: 0;
+    right: 0px;
+}
+
+.ladybug:hover {
+animation: ladybug 4s;
+}
+.fence:hover {
+    animation: ladybug 4s;
+
+}
+.shovel:hover {
+    animation: ladybug 4s;
+
+}
+
+
+@keyframes spin {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes ladybug {
+    0% {
+        width: 200px;
+        rotate: 0deg;
+    }
+    50% {
+        width:300px;
+        
+    }
+    100% {
+        width: 200px;
+        rotate: 360deg;
+    }
+}
+
+.title {
+    font-size: 60px;
+    font-family: 'hortus';
+    color: rgb(255, 255, 75);
+    text-shadow: 3px 3px rgb(4, 63, 1);
+    text-align: center;
+    /* filter: drop-shadow(4px black); */
+    /* box-shadow: 4px 6px 9px black; */
+}

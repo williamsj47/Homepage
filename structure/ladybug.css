@@ -1,0 +1,17 @@
+body {
+    background-color: crimson;
+    margin: 20px;
+    border-color: black;
+    border-width: 30px;
+}
+
+.header1 {
+    font-size: 100px;
+    font-style: italic;
+}
+
+
+.middle {
+    justify-items: center;
+    align-items: center;
+}
