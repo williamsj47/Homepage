@@ -6,12 +6,36 @@ body {
 }
 
 .header1 {
-    font-size: 100px;
+    font-size: 80px;
     font-style: italic;
+    text-decoration:underline 4px;
 }
 
 
 .middle {
     justify-items: center;
     align-items: center;
+}
+
+@keyframes bug {
+    0% {
+        rotate: 0deg;
+    
+    }
+    50% {
+        rotate: 360deg;
+    }
+    100% {
+        rotate: 0deg;
+
+    }
+}
+
+.buggy {
+    display: flex;
+    justify-items:end;
+    align-items:end;
+    position: absolute;
+    animation: bug 6s infinite ease-in-out;
+    
 }
