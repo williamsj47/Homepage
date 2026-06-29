@@ -1,0 +1,31 @@
+
+
+body {
+    background-color: rgb(114, 33, 33);
+
+}
+
+.shovel-text {
+   font-style: italic;
+    font-size: 40px;
+    text-align: center;
+}
+
+@keyframes shovel-spin {
+    0% {
+        rotate: 0deg;
+        eft: 0;
+    }
+    50% {
+        left: 100vw;
+    }
+    100% {
+    rotate: 360deg;
+    left: 0;
+    }
+}
+
+.spin {
+     animation: shovel-spin 10s infinite ease-in-out;
+     left: 0;
+}

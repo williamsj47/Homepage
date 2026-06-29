@@ -76,6 +76,10 @@ width: 200px;
     right: 0px;
 }
 
+.small-flower, .grass {
+align-items: center;
+}
+
 .ladybug:hover {
 animation: ladybug 4s;
 }

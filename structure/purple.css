@@ -2,14 +2,13 @@
 
 body {
     background-color: rgb(181, 103, 255);
-    padding: 40px;
-    margin: 40px;
+    margin: 5px;
 }
 
 .text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 300px;
-    max-width: 1000px;
+    font-size: 250px;
+    /* max-width: 1000px; */
 }
 
 
@@ -23,7 +22,6 @@ body {
 
 /* Desktop---> tablet--->phone (with max width) */
 
-
 @media screen and (max-width:900px) {
 body {
     background-color: rgb(166, 255, 234);
@@ -34,7 +32,8 @@ body {
 
 .text:hover {
     background-color: rgb(255, 115, 213);
-   color: beige;
+overflow:visible;  
+ color: beige;
 }
 
 .flex {

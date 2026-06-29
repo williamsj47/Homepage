@@ -1,0 +1,16 @@
+
+
+
+body {
+    background-color: rgb(249, 241, 233);
+    background-image: url(sky-background.jpeg);
+    background-size: cover;
+}
+
+.fence-text {
+    /* background-color: rgb(201, 246, 255); */
+    font-size: 60px;
+    font-style: italic;
+    box-shadow: 2px 4px 8px rgb(5, 71, 238);
+    text-align: center;
+}
