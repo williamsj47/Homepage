@@ -1,0 +1,428 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    /* background-image: url(space-2.jpeg);
+    background-size: cover; */
+background: linear-gradient(black 0%,rgb(53, 6, 68)50%,rgb(94, 4, 73) 100%);
+background-attachment: fixed;
+}
+
+.animation {
+    display: flex;
+}
+
+.moon {
+    /* width: 90px;
+    height: 90px; */
+    border-radius: 60px;
+    /* background-color: rgb(202, 205, 208); */
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    animation: moon 90s infinite linear;
+    
+}
+
+
+
+@keyframes moon {
+    0% {
+    /* left: 0px;
+    top: 140px;  */
+    rotate: 0deg;
+    /* width: 170px;     */
+}
+    50% {
+    /* left: 100vw;
+    top: 140px; */
+    rotate: 360deg;
+    /* width: 220px; */
+    }
+    100% {
+    /* left: 0px;
+    top: 140px; */
+    rotate: 0deg; 
+    /* width: 170px; */
+    }
+}
+
+
+.sun {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 29px 10px 0 0 #d3d3d3;    position: absolute;
+    right: 70px;
+    top: 70px;
+    animation: sun 16s infinite linear;
+    transform-origin: center;
+    position: absolute;
+    
+}
+
+@keyframes sun  {
+     0% {
+    /* width: 120px;
+    height: 120px; */
+    rotate: -10deg;
+    }
+    50% {
+    /* width: 200px;
+    height: 200px; */
+    rotate: 50deg;
+    }
+    100% {
+    /* width: 120px;
+    width: 120px; */
+    rotate: -10deg;
+    }
+}
+
+.star {
+display: flex;
+position: absolute;
+bottom: 20px;
+left: 500px;
+animation: shooting-star 20s infinite linear;
+
+}
+
+@keyframes shooting-star {
+    0% {
+    left:0px;
+    bottom:140px;
+    }
+    25% {
+    left: 800px;
+    bottom:580px;
+    }
+    50% {
+        left: 0px;
+        bottom: 450px;
+    }
+    75% {
+        left:1080px;
+        bottom:300px;
+    }
+    100% {
+    left: 0px;
+    bottom: 140px;
+    }
+
+}
+
+
+
+.star-1 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 20px;
+  aspect-ratio: 1;
+  /* Coordinates forming the 5 points of the star */
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 2s linear infinite;
+  left: 30px;
+  top: 300px;
+}
+
+@keyframes star {
+    0% {
+    opacity: 1;    }
+    50% {
+    opacity: 0;
+}
+    100% {
+    opacity: 1;    }
+}
+
+.star-2 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 20px;
+  aspect-ratio: 1;
+  /* Coordinates forming the 5 points of the star */
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 4s linear infinite;
+  right: 30px;
+  top: 400px;
+}
+
+.star-3 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 30px;
+  aspect-ratio: 1;
+  /* Coordinates forming the 5 points of the star */
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 4s linear infinite;
+  right: 70px;
+  top: 700px;
+}
+
+.star-4 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 20px;
+  aspect-ratio: 1;
+  /* Coordinates forming the 5 points of the star */
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 6s linear infinite;
+  left: 200px;
+  top: 200px;
+}
+
+.star-5 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 30px;
+  aspect-ratio: 1;
+  /* Coordinates forming the 5 points of the star */
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 6s linear infinite;
+  right: 500px;
+  top: 450px;
+}
+
+.star-6 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 20px;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 4s linear infinite;
+  left: 400px;
+  top: 40px;
+}
+
+
+
+
+
+.star-7 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 20px;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 2s linear infinite;
+  left: 400px;
+  top: 400px;
+}
+
+.star-8 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 20px;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 4s linear infinite;
+  right: 250px;
+  top: 100px;
+}
+
+.star-9 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 20px;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 4s linear infinite;
+  left: 300px;
+  bottom: 200px;
+}
+
+.star-10 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 30px;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 4s linear infinite;
+  right: 400px;
+  top: 200px;
+}
+
+.star-11 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 20px;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 4s linear infinite;
+  right: 200px;
+  bottom: 450px;
+}
+
+.star-12 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 30px;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 4s linear infinite;
+  left: 700px;
+  top: 100px;
+}
+
+.star-13 {
+    position: absolute;
+  background: rgb(255, 255, 254);
+  width: 30px;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: star 4s linear infinite;
+  left: 700px;
+  bottom: 70px;
+}
+
