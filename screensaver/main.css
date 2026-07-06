@@ -6,26 +6,54 @@ img {
     max-width: 100%;
 }
 
+
 body {
-    /* background-image: url(space-2.jpeg);
-    background-size: cover; */
-background: linear-gradient(black 0%,rgb(53, 6, 68)50%,rgb(94, 4, 73) 100%);
-background-attachment: fixed;
+
+  background: linear-gradient(45deg,#000000, black, #3c0b52, #022b6d, #a1c4fd);
+  background-size: 300% 300%;
+  animation: sky 40s ease infinite;
+  height: 100vh;
 }
+
+@keyframes sky {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .animation {
     display: flex;
 }
 
 .moon {
-    /* width: 90px;
-    height: 90px; */
+    
     border-radius: 60px;
     /* background-color: rgb(202, 205, 208); */
     position: absolute;
-    left: 40px;
-    bottom: 40px;
-    animation: moon 90s infinite linear;
+    left: 70px;
+    bottom: 70px;
+    /* animation: moon 90s infinite linear; */
+
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 20px 10px  0 #d3d3d3;    
+    position: absolute;
+    transform: scaleX(-1);
+
+    
+    animation: sun 16s infinite linear;
+    transform-origin: center;
+    position: absolute;
     
 }
 
@@ -91,7 +119,7 @@ display: flex;
 position: absolute;
 bottom: 20px;
 left: 500px;
-animation: shooting-star 20s infinite linear;
+animation: shooting-star 17s infinite linear;
 
 }
 
@@ -102,14 +130,14 @@ animation: shooting-star 20s infinite linear;
     }
     25% {
     left: 800px;
-    bottom:580px;
+    bottom:680px;
     }
     50% {
         left: 0px;
         bottom: 450px;
     }
     75% {
-        left:1080px;
+        left:1260px;
         bottom:300px;
     }
     100% {
