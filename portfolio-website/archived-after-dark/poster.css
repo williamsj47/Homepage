@@ -1,0 +1,26 @@
+
+    .workphotos:hover {
+scale: 1.5;
+padding: 30px;
+margin: 10px;
+}
+
+.container-poster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    margin-bottom: 0.2em;
+    color: white;
+}
+
+p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    margin-top: 0;
+    color: white;
+}
