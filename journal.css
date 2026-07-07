@@ -1,0 +1,24 @@
+
+
+
+body {
+    background-color: rgb(238, 207, 255);
+}
+
+
+
+.journal-header {
+    font-size: 40px;
+    font-style: italic;
+    padding: 30px;
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+}
+
+.paragraph {
+    font-size: 15px;
+    line-height: 25px;
+    background-color: rgb(164, 190, 255);
+    border-radius: 8px;
+    padding: 10px;
+}
