@@ -1,0 +1,127 @@
+
+body {
+    background-color: rgb(185, 83, 0);
+}
+
+
+.parent {
+position: absolute;
+display: flex;
+flex-direction: row;
+top: -60px;
+}
+
+.leaf {
+    animation: falling 10s infinite linear;
+
+    position: absolute;
+    left: 210px;
+    rotate: -60deg;
+}
+
+.leaf2 {
+    animation: falling 14s infinite linear;
+
+    position: absolute;
+    left: 500px;
+    rotate: 40deg;
+}
+
+
+.leaf3 {
+    animation: falling 12s infinite linear;
+
+    position: absolute;
+    left: 1230px;
+    rotate: 120deg;
+}
+.leaf4 {
+    animation: falling 15s infinite linear;
+
+    position: absolute;
+    left: 460px;
+    rotate: 40deg;
+}
+.leaf5 {
+    animation: falling 10s infinite linear;
+
+    position: absolute;
+    left: 890px;
+    rotate: -10deg;
+}
+.leaf6 {
+    animation: falling 17s infinite linear;
+
+    position: absolute;
+    left: 1020px;
+    rotate: 280deg;
+}
+.leaf7 {
+    animation: falling 20s infinite linear;
+
+    position: absolute;
+    left: 650px;
+    rotate: 30deg;
+}
+.leaf8 {
+    animation: falling 14s infinite linear;
+
+    position: absolute;
+    left: 545px;
+    rotate: 90deg;
+}
+.leaf9 {
+    animation: falling 18s infinite linear;
+
+    position: absolute;
+    left: 380px;
+    rotate: -200deg;
+}.leaf10 {
+    animation: falling 10s infinite linear;
+
+    position: absolute;
+    left: 1300px;
+    rotate: 0deg;
+}
+.leaf11 {
+    animation: falling 10s infinite linear;
+
+    position: absolute;
+    left: 675px;
+    rotate: 20deg;
+}
+.leaf12 {
+    animation: falling 10s infinite linear;
+
+    position: absolute;
+    left: 745px;
+    rotate: 280deg;
+}
+
+.leaf13 {
+    animation: falling 10s infinite linear;
+
+    position: absolute;
+    left: 20px;
+    rotate: 280deg;
+}
+
+.leaf14 {
+    animation: falling 14s infinite linear;
+
+    position: absolute;
+    left: 100px;
+    rotate: 30deg;
+}
+
+
+
+
+@keyframes falling {
+    0% {
+top:-60px;
+    }
+    100% {
+top: 100vh;
+    }
+}
