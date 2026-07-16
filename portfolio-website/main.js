@@ -1,4 +1,0 @@
-
-
-
-$("#nav").load("/menu.html");
