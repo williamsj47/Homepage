@@ -116,10 +116,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 color: white;
-font-size: 30px;
+font-size: 35px;
 pointer-events: none;
 opacity: 0;
-transition: opacity .5s;
+transition: opacity .3s;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -156,5 +157,9 @@ opacity: 1;
     padding-top: 30px;
 
 
+}
+
+.pink {
+    color: deeppink;
 }
 
