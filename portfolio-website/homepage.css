@@ -16,6 +16,16 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'webster';
+    src: url('WebsterDeluxe-Regular.woff2') format('woff2'),
+        url('WebsterDeluxe-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 body {
     /* background:linear-gradient(rgb(254, 0, 119),rgb(255, 101, 18));
@@ -86,10 +96,41 @@ padding: 10px;
 }
 
 .curve:hover {
+filter: blur(6px);
 background-color: rgb(0, 0, 0);
 cursor:url(star.png), auto;
-/* animation: hover 2s linear; */
 }
+
+.cover-object {
+    position: relative;
+    display: block;
+}
+
+.cover-text {
+width: 100%; 
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 30px;
+pointer-events: none;
+opacity: 0;
+transition: opacity .5s;
+
+}
+
+.cover-object:hover .cover-text {
+opacity: 1;
+}
+
+.black {
+    color: black;
+}
+
 
 @keyframes hover {
     0% {
@@ -107,69 +148,6 @@ cursor:url(star.png), auto;
 }
 
 
-.menu {
-    background: rgb(23, 2, 59);
-    position: fixed;
-    top: 0;
-    right: -250px;
-    height: 100vh;
-    width: 250px;
-    overflow-y: auto;
-    
-    text-align: center;
-    font-family: 'avenir';
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    /* z-index: 1; */
-
-}
-.menu.active {
-    right:0;
-}
-
-.menu:hover {
-    cursor: url(star.png), auto;
-}
-
-
-.link {
-text-decoration: none;
-color: white;
-}
-
-.link:hover {
-    font-size: 22px;
-    color: black;
-    background-color: rgb(255, 0, 132);
-    padding: 4px;
-    border-radius: 5px;
-    cursor: url(star.png), auto;
-}
-
-/* star button */
-.button {
-    background-color: rgb(146, 13, 73);
-    border: none;
-    color: white;
-    font-family: 'avenir';
-    font-size: 20px;
-    padding: 5px;
-    width: 70px;
-    height: 70px;
-  clip-path: polygon(
-    50% 0%, 
-    61% 35%, 
-    98% 35%, 
-    68% 57%, 
-    79% 91%, 
-    50% 70%, 
-    21% 91%, 
-    32% 57%, 
-    2% 35%, 
-    39% 35%
-  );
-
-}
 
 .box {
     background: rgb(146, 13, 73);
@@ -179,3 +157,4 @@ color: white;
 
 
 }
+

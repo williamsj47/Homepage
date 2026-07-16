@@ -11,6 +11,7 @@ h1 {
     font-style: italic;
     margin-bottom: 0.2em;
     color: black;
+    text-align: center;
 }
 
 p {
@@ -18,10 +19,16 @@ p {
     font-size: 10px;
     margin-top: 0;
     color: black;
+    text-align: center;
 }
 
 .abc-flex {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+}
+
+.button {
+    background-color:black ;
 }

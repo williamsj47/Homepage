@@ -4,52 +4,13 @@
         <title>
             Portfolio
         </title>
+        <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="homepage.css">
+
     </head>
     <body>  
 
-
-    <br><button onclick="openMenu()" class="button">☰</button>
-
-
-
-    <div class="menu"><br>Project list
-
-    <br><br><br><div><a href="archived-after-dark/aad.html" class="link">Archived After Dark</a></div>
-
-    <br><div><a href=" " class="link">Wristbands</a></div>
-
-    <br><div><a href="test-318/test318.html" class="link" >Test-318</a></div>
-
-    <br><div><a href="" class="link">HOT stickers</a></div>
-
-    <br><div><a class="link">Archive of Fruits</a></div>
-
-    <br><div><a href="tattoo-book/tattoobook.html" class="link">Tattoo Book</a></div>
-
-    <br><div><a href="richmunch/richmunch.html" class="link">Richmunch</a></div>
-    <br><div><a href-="playbil/playbill.html" class="link">Playbill</a></div>
-    <br><div><a href="lipstick-book/lipstick.html" class="link">Lipstick</a></div>
-    <br><div><a href="aalignstars/aalignstar.html" class="link">Aalign Stars</a></div>
-    <br><div><a href="../index.html" class="link">Website Homepage</a></div>
-    <br><div><a href="Strip/naturestrip.html" class="link">Nature strip</a></div>
-    <br><div><a href="Chocolate-bar/bar.html" class="link">Chocolate Bar</a></div>
-    <br><div><a href="Spider-type/spider.html" class="link">Webster Deluxe</a></div>
-
-
-
-    </div>
-
-
-    <script>
-const menu = document.querySelector(".menu");
-
-function openMenu() {
-    console.log("it works!");
-    menu.classList.toggle("active");
-}
-</script>
-
+    <div id="nav"></div>
 
 
     <div class="h1">JULIA WILLIAMS</div>
@@ -62,9 +23,25 @@ function openMenu() {
 <br><br><br><br><br>
 <div class="hover-photos box">
 
-<div><a href="archived-after-dark/aad.html"><img src="archived-after-dark/aad-cover-long.png" class="curve cover-sizing"></a></div>    
 
-<div><a href="richmunch/richmunch.html" ><img src="richmunch/cover.png" class="curve cover-sizing"></a> </div>
+
+<div>
+    <a class="cover-object" href="archived-after-dark/aad.html">
+    <img src="archived-after-dark/aad-cover-long.png" class="curve cover-sizing">
+    <span class="cover-text">Archived After Dark</span>
+</a>
+</div>    
+
+
+
+
+<div><a class="cover-object" href="richmunch/richmunch.html" ><img src="richmunch/cover.png" class="curve cover-sizing">
+<span class="cover-text black">Rich(munch)</span>
+</a> </div>
+
+<!--  -->
+
+
 <div><a href="test-318/test318.html" ><img src="test-318/CDcover2.png" class="curve cover-sizing"> </a></div>
 
 <div><a href="test-318/hot.html" ><img src="test-318/hot-sticker.jpg" class="curve cover-sizing"> </a></div>
@@ -83,7 +60,7 @@ function openMenu() {
 <div><a href="Strip/naturestrip.html" ><img src="Strip/naturestrip.png" class="curve cover-sizing"> </a></div>
 
 <div><a href="Spider-type/spider.html" ><img src="Spider-type/type.png" class="curve cover-sizing"> </a></div>
-<div><a href=" " ><img src="Clown-drawing/clown-drawing.jpg" class="curve cover-sizing"> </a></div>
+<div><a href="Clown-drawing/clown.html" ><img src="Clown-drawing/clown-drawing.jpg" class="curve cover-sizing"> </a></div>
 
 
 
@@ -124,6 +101,9 @@ function openMenu() {
 
 <div><a href="summerspiritz.html"><img src="wristband-logo.png" width="180px" class="flowerbutton"> </a> </div> -->
   <!-- </div> -->
+
+<script src="jquery-4.0.0.min.js"></script>
+<script src="main.js"></script>
 
 
     </body>

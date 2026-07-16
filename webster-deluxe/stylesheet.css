@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Webster Deluxe';
+    src: url('WebsterDeluxe-Regular.woff2') format('woff2'),
+        url('WebsterDeluxe-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

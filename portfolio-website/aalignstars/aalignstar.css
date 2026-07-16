@@ -3,6 +3,7 @@ h1 {
     font-style: italic;
     margin-bottom: 0.2em;
     color: white;
+    text-align: center;
 }
 
 p {
@@ -10,10 +11,21 @@ p {
     font-size: 10px;
     margin-top: 0;
     color: white;
+    text-align: center;
 
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
 
+}
+
+.as-flex {
+    display: flex;
+gap: 30px;
+justify-content: center;
+}
+
+.button {
+    background-color: rgb(168, 34, 34);
 }

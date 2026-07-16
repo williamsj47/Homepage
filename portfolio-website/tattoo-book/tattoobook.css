@@ -1,8 +1,12 @@
+
+
+
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
     margin-bottom: 0.2em;
     color:white;
+    text-align: center;
 }
 
 p {
@@ -10,4 +14,13 @@ p {
     font-size: 10px;
     margin-top: 0;
     color:white;
+    text-align: center;
+}
+
+
+.flex-tattoo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
